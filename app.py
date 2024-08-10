@@ -96,6 +96,5 @@ elif choice == 'Column Analysis':
             fig3=px.scatter(df,x=scol,y=col2,color=color,
                             title=f'{scol} vs {col2}',height=600)
             st.plotly_chart(fig3,use_container_width=True)
-            
 
-        
+            
