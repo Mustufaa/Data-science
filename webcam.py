@@ -1,8 +1,8 @@
 import cv2
 
 #0 is the index of the camera
-stream_url = r"https://meet.google.com/kfq-dpdz-vaa"
-cam=cv2.VideoCapture(stream_url)
+#stream_url = r"https://meet.google.com/kfq-dpdz-vaa"
+cam=cv2.VideoCapture(0)
 
 while cam.isOpened():
     state,frame = cam.read()
