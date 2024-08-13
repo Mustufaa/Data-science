@@ -1,13 +1,13 @@
 import cv2
 
-path=r"C:\Users\lenovo\Downloads\UnifiedShareSheet.mp4"
+path=r"c:\Users\lenovo\Downloads\47213-451041047_medium.mp4"
 video=cv2.VideoCapture(path)
 
 while True:
     state, frame= video.read()
     if not state: break
 
-    frame=cv2.resize(frame,(0,0),fx=.5  ,fy=.5)
+    frame=cv2.resize(frame,(0,0),fx=.20 ,fy=.20)
     gray= cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     rgb= cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     hsv= cv2.cvtColor(frame, cv2.COLOR_BGR2HSV_FULL)

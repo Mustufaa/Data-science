@@ -1,7 +1,8 @@
 import cv2
 
 #0 is the index of the camera
-cam=cv2.VideoCapture(0)
+stream_url = r"https://meet.google.com/kfq-dpdz-vaa"
+cam=cv2.VideoCapture(stream_url)
 
 while cam.isOpened():
     state,frame = cam.read()
@@ -13,3 +14,4 @@ while cam.isOpened():
     if cv2.waitKey(10) == ord('q'):
         break
 
+cam.release()
