@@ -1,7 +1,8 @@
 import cv2
 
 # Open the video file
-video_path = r'C:\Users\lenovo\Downloads\854524-hd_1080_720_25fps.mp4'
+video_path = r'C:\Users\lenovo\Downloads\8566515-uhd_2560_1440_30fps.mp4'
+
 cap = cv2.VideoCapture(video_path)
 
 # Check if the video opened successfully
