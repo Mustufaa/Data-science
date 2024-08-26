@@ -68,7 +68,7 @@ def main():
             audio = recognizer.record(source)
             try:
                 text = recognizer.recognize_google(audio)
-                st.write(f"**Transcription:** {text}")
+                st.write(f"**Transcription:** {text}") 
             except sr.UnknownValueError:
                 st.write("Sorry, could not understand the audio.")
             except sr.RequestError:
